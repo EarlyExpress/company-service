@@ -32,17 +32,20 @@ public class Company extends BaseEntity {
 	private Type type;
 
 	@Column(length = 36)
-	private String ownerHubId;
+	private String managingHubId;
 
 	@Column(length = 100)
 	private String address;
 
 	@Builder
-	public Company(String name, Type type, String ownerHubId, String address) {
+	public Company(String name, Type type, String managingHubId, String address) {
 		this.id = UuidUtils.generate();
 		this.name = name;
 		this.type = type;
-		this.ownerHubId = ownerHubId;
+		this.managingHubId = managingHubId;
 		this.address = address;
 	}
+
+	@Column(length = 36)
+	private String ownerId;
 }
