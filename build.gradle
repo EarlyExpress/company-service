@@ -43,7 +43,7 @@ dependencies {
     // 외부 설정 서버로부터 설정 정보를 가져옴
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
     // Eureka 서비스 디스커버리 클라이언트
-    implementation 'org.springframework.cloud:spring-cloud-starter-netflixeureka-client'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
     // 클라이언트 사이드 로드밸런싱
     implementation 'org.springframework.cloud:spring-cloud-starter-loadbalancer'
     // 선언적 REST 클라이언트
